@@ -1,0 +1,56 @@
+html {
+  position: relative;
+  min-height: 100%;
+  font-size: $body-font-size;
+}
+
+body {
+  margin-bottom: $footer-height; /* Margin bottom by footer height */
+}
+
+.header {
+  padding: 5rem 1rem;
+  text-align: center;
+  color: #fff;
+
+  h1 {
+    margin-bottom: 0.5rem;
+    font-size: 3rem;
+    font-weight: 400;
+    a {
+      color: #fff;
+    }
+  }
+
+  .lead {
+    color: rgba(255, 255, 255, 0.8);
+  }
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: $footer-height; /* Set the fixed height of the footer here */
+  line-height: $footer-height; /* Vertically center the text there */
+}
+
+.btn-outline-white {
+  color: #fff;
+  background-color: transparent;
+
+  &,
+  &:hover,
+  &:focus,
+  &:active {
+    border-color: #fff;
+    background-image: none;
+  }
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: $text-gray-dark;
+    background-color: #fff;
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "private": true,
+  "scripts": {
+    "postinstall": "gem install bundler && bundle install",
+    "start": "bundle exec jekyll serve",
+    "build": "npm run build:sass && npm run build:js",
+    "build:js": "cp node_modules/anchor-js/anchor.min.js assets/js/app.js",
+    "build:sass": "node-sass --include-path=node_modules --output-style=compressed src/sass/app.scss assets/css/app.css"
+  },
+  "author": "Ravindra Marella",
+  "license": "MIT",
+  "devDependencies": {
+    "anchor-js": "^4.0.0",
+    "node-sass": "^4.8.3",
+    "primer-base": "^1.3.0",
+    "primer-buttons": "^2.5.3",
+    "primer-layout": "^1.2.0",
+    "primer-markdown": "^3.5.0",
+    "primer-support": "^4.2.0",
+    "primer-utilities": "^4.5.0"
+  }
+}

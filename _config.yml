@@ -1,0 +1,6 @@
+exclude:
+  - node_modules
+  - script
+  - src
+
+remote_theme: marella/jekyll-theme-documentation
