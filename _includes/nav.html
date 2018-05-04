@@ -1,0 +1,17 @@
+{% for link in include.links %}
+  {% if link.first %}
+    {% for part in link %}
+      {% assign part0 = part[0] %}
+      {% assign part1 = part[1] %}
+      {% if part1.first %}
+        <span class="menu-heading">{{ part0 }}</span>
+        {% include nav.html links=part1 %}
+      {% else %}
+        {% include nav-link.html title=part0 url=part1 %}
+      {% endif %}
+    {% endfor %}
+  {% else %}
+    {% assign title = link | capitalize %}
+    {% include nav-link.html title=title url=link %}
+  {% endif %}
+{% endfor %}

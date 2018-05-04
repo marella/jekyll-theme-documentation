@@ -1,0 +1,27 @@
+.toc {
+  @extend .menu;
+  &:before {
+    @extend .menu-heading;
+    content: 'Contents';
+  }
+  li {
+    list-style-type: none;
+    margin: 0;
+  }
+  a {
+    @extend .menu-item;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-bottom: none;
+  }
+  ul {
+    border-bottom: 1px solid $gray-200;
+    a {
+      padding-left: 2em;
+    }
+  }
+}
+
+.anchorjs-link:hover {
+  text-decoration: none;
+}

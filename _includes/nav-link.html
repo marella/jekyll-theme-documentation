@@ -1,0 +1,2 @@
+{% assign url = include.url | append: '/' | relative_url %}
+<a class="menu-item {% if url == page.url %}selected{% endif %}" href="{{ url }}">{{ include.title }}</a>

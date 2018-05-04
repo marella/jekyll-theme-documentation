@@ -1,0 +1,5 @@
+{% unless site.hide_toc or page.hide_toc %}
+{% assign h_min = site.toc_min | default: 2 %}
+{% assign h_max = site.toc_max | default: 3 %}
+{% include toc-plugin.html html=content h_min=h_min h_max=h_max class='toc' sanitize=true %}
+{% endunless %}

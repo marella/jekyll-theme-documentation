@@ -1,6 +1,17 @@
 exclude:
+  - Gemfile
+  - Gemfile.lock
   - node_modules
+  - package.json
+  - package-lock.json
   - script
   - src
 
 remote_theme: marella/jekyll-theme-documentation
+
+permalink: pretty
+nav:
+  - Home: ''
+  - Demos:
+    - Markdown: demos/markdown
+    - Table of Contents: demos/toc

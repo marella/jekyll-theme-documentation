@@ -1,0 +1,41 @@
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: $footer-height; /* Margin bottom by footer height */
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: $footer-height; /* Set the fixed height of the footer here */
+}
+
+.container-xl {
+  @extend .px-3;
+}
+
+@include breakpoint('xl') {
+  .sidebar-col {
+    width: percentage(1/4);
+    margin-left: $spacer-5;
+  }
+
+  .sidebar {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+
+    &-inner {
+      max-height: calc(100vh - #{2 * $spacer-4});
+      overflow-y: auto;
+    }
+
+    .menu:last-child {
+      margin-bottom: 0;
+    }
+  }
+}

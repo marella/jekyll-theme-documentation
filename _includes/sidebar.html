@@ -1,0 +1,12 @@
+<div class="sidebar py-4">
+  <div class="sidebar-inner">
+    {% include toc.html %}
+    {% unless page.hide_nav %}
+      {% if site.nav %}
+      <nav class="menu">
+        {% include nav.html links=site.nav %}
+      </nav>
+      {% endif %}
+    {% endunless %}
+  </div>
+</div>
