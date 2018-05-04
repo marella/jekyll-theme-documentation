@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |s|
   s.name          = "jekyll-theme-documentation"
-  s.version       = "0.0.1"
+  s.version       = "0.0.2"
   s.summary       = "A Jekyll theme for hosting documentation on GitHub Pages."
   s.authors       = ["Ravindra Marella"]
   s.homepage      = "https://github.com/marella/jekyll-theme-documentation"
