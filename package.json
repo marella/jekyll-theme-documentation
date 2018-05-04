@@ -3,7 +3,7 @@
   "scripts": {
     "postinstall": "gem install bundler && bundle install",
     "start": "npm run build:watch & npm run start:jekyll",
-    "start:jekyll": "bundle exec jekyll serve --livereload",
+    "start:jekyll": "bundle exec jekyll serve --baseurl=/jekyll-theme-documentation --livereload",
     "build": "npm run build:sass && npm run build:js",
     "build:js": "cp node_modules/anchor-js/anchor.min.js assets/js/app.js",
     "build:sass": "node-sass --precision=8 --include-path=node_modules --output-style=compressed src/sass -o assets/css",
