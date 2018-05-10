@@ -3,9 +3,7 @@
     {% include toc.html %}
     {% unless page.hide_nav %}
       {% if site.nav %}
-      <nav class="menu">
-        {% include nav.html links=site.nav %}
-      </nav>
+      {% include nav.html links=site.nav %}
       {% endif %}
     {% endunless %}
   </div>
