@@ -4,6 +4,8 @@
       {% assign part0 = part[0] %}
       {% assign part1 = part[1] %}
       {% if part1.first %}
+      </nav>
+      <nav class="menu">
         <span class="menu-heading">{{ part0 }}</span>
         {% include nav.html links=part1 %}
       {% else %}
