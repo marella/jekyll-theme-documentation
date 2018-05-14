@@ -4,10 +4,6 @@
 
 .toc {
   @extend .menu;
-  &:before {
-    @extend .menu-heading;
-    content: 'Contents';
-  }
   li {
     list-style-type: none;
     margin: 0;

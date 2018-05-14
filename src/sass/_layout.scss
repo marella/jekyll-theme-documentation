@@ -16,18 +16,20 @@ body {
 
 .container-xl {
   @extend .px-3;
+  max-width: 1366px;
 }
 
 @include breakpoint('xl') {
   .sidebar-col {
-    width: percentage(1/4);
-    margin-left: $spacer-5;
+    width: 250px;
   }
 
   .sidebar {
     position: -webkit-sticky;
     position: sticky;
     top: 0;
+    padding-top: $spacer-4;
+    padding-bottom: $spacer-4;
 
     &-inner {
       max-height: calc(100vh - #{2 * $spacer-4});
@@ -37,5 +39,18 @@ body {
     .menu:last-child {
       margin-bottom: 0;
     }
+  }
+
+  .navigation-col {
+    order: 1;
+  }
+
+  .content-col {
+    padding: $spacer-5;
+    order: 2;
+  }
+
+  .toc-col {
+    order: 3;
   }
 }

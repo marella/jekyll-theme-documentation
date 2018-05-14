@@ -10,12 +10,19 @@
     {% include navbar.html %}
 
     <div class="container-xl">
+      <div class="d-xl-none py-3">
+        {% include navigation.html %}
+        {% include toc.html %}
+      </div>
       <div class="d-xl-flex flex-items-stretch">
-        <div class="flex-item-equal min-width-0 py-4 markdown-body">
+        <div class="toc-col sidebar-col d-none d-xl-block">
+          {% include toc.html open=true %}
+        </div>
+        <div class="content-col flex-item-equal min-width-0 markdown-body">
           {{ content }}
         </div>
-        <div class="sidebar-col">
-          {% include sidebar.html %}
+        <div class="navigation-col sidebar-col d-none d-xl-block">
+          {% include navigation.html open=true %}
         </div>
       </div>
     </div>
