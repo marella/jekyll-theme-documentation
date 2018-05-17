@@ -18,6 +18,24 @@ This is a normal paragraph following a header. GitHub is a code hosting platform
 
 ### [](#header-3)Header 3
 
+```py
+# Python code with syntax highlighting
+import module
+
+def function(x):
+    return x + 1
+
+class ClassName(object):
+    """docstring for ClassName"""
+    def __init__(self, arg):
+        super(ClassName, self).__init__()
+        self.arg = arg
+
+    @property
+    def foo(self):
+        return self._foo
+```
+
 ```js
 // Javascript code with syntax highlighting.
 var fun = function lang(l) {
