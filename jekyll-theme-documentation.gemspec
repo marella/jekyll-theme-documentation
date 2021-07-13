@@ -8,7 +8,7 @@ Gem::Specification.new do |s|
   s.homepage      = "https://github.com/marella/jekyll-theme-documentation"
 
   s.files         = `git ls-files -z`.split("\x0").select do |f|
-    f.match(%r!^(assets|_(layouts|sass)/|(LICENSE|README)((\.(txt|md)|$)))!i)
+    f.match(%r!^(assets|_(includes|layouts|sass)/|(LICENSE|README)((\.(txt|md)|$)))!i)
   end
 
   s.add_dependency "jekyll", "~> 3.5"
